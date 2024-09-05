@@ -1,0 +1,40 @@
+{
+    "sections": {
+        "hero": {
+            "type": "hero"
+        },
+        "benefits": {
+            "type": "benefits"
+        },
+        "category": {
+            "type": "category"
+        },
+        "our_story": {
+            "type": "our_story"
+        },
+        "testimonials": {
+            "type": "testimonials"
+        },
+        "social_media": {
+            "type": "social_media"
+        },
+        "instafeed": {
+            "type": "instafeed"
+        },
+        "liquify_hero": {
+            "type": "liquify_hero"
+        }
+    },
+    "layout": "theme",
+    "wrapper": "main.main-wrapper global-padding",
+    "order": [
+        "hero",
+        "benefits",
+        "category",
+        "our_story",
+        "testimonials",
+        "social_media",
+        "instafeed",
+        "liquify_hero"
+    ]
+}
