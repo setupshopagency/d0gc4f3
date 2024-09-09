@@ -873,6 +873,7 @@ figcaption {
 
 .section_footer {
   color: var(--base-color-neutral--white);
+  font-size: 1vw;
 }
 
 .cart_grid-wrapper {
@@ -4308,11 +4309,12 @@ figcaption {
   text-align: center;
 }
 
-.img_dog-paws {
-  z-index: 0;
-  max-width: 80%;
+.img_jerky-treats {
+  z-index: 25;
+  width: 100em;
+  max-width: 33em;
   position: absolute;
-  inset: auto -11% -11% auto;
+  inset: 0%;
 }
 
 .section_testimonials {
@@ -4639,6 +4641,7 @@ figcaption {
 }
 
 .wrap_fur-parents {
+  z-index: 30;
   aspect-ratio: 1;
   width: 100em;
   max-width: 22em;
@@ -4662,6 +4665,31 @@ figcaption {
 
 .m4in-wr4pp3r {
   font-size: 1vw;
+}
+
+.wrap_our-story-hero {
+  width: 100em;
+  max-width: 33em;
+  height: 100em;
+  max-height: 33em;
+  position: absolute;
+  bottom: -1em;
+  right: -13em;
+}
+
+.img_dog-paws {
+  z-index: 26;
+  width: 100em;
+  max-width: 22em;
+  position: absolute;
+  inset: auto auto -3.5em -8em;
+}
+
+.global-padding-clyde {
+  width: 100vw;
+  max-width: 98vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 1280px) {
@@ -6816,12 +6844,13 @@ figcaption {
 
   .container-footer {
     margin-bottom: 3.5em;
-    padding: 6.2em 4.8em 24.8em;
+    padding: 6.2em 4.8em 42.4em;
   }
 
   .footer-links {
     grid-column-gap: 3em;
     grid-row-gap: 3em;
+    margin-top: 2em;
     font-size: 2em;
   }
 
@@ -6843,7 +6872,10 @@ figcaption {
   }
 
   .img_footer-dog {
-    max-width: 65em;
+    max-width: 82em;
+    bottom: 4em;
+    right: -4em;
+    transform: rotate(-8deg);
   }
 
   .txt_variant {
@@ -6856,7 +6888,8 @@ figcaption {
   }
 
   .wrap_footer-content {
-    grid-row-gap: 9em;
+    grid-column-gap: 3em;
+    grid-row-gap: 3em;
     justify-content: space-between;
     align-items: stretch;
     display: flex;
