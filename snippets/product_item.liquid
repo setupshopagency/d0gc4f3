@@ -112,4 +112,4 @@
                         </div>
 {% endfor %}</div>{% endform %}
 <div class="w-form-done"><div>Thank you! Your submission has been received!</div></div><div class="w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div>    </div>
-{% endif %}<a li-element="add-to-cart" href="#" class="button w-button" @click="addToCart()" :disabled="!addToCartButton">add to cart 1</a><a href="#" class="button w-button" style="background-color:{{product.metafields.custom.product_color}}">add to cart 2</a></div>
+{% endif %}<div class="button-bg" style="background-color:{{product.metafields.custom.product_color}}"><a li-element="add-to-cart" href="#" class="button max-width-full w-button" @click="addToCart()" :disabled="!addToCartButton">add to cart 1</a></div><a href="#" class="button w-button" style="background-color:{{product.metafields.custom.product_color}}">add to cart 2</a></div>
