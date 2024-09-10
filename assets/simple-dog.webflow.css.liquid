@@ -14,6 +14,7 @@
   --background-color--background-tertiary: var(--base-color-brand--pink);
   --brand-yellow: #ff9e01;
   --base-color-neutral--neutral-lightest: #eee;
+  --base-color-brand--blue-light: #d9e5ff;
   --accessible-components-dark-grey\<deleted\|variable-c4d8099c\>: #9b9b9b;
   --text-color--text-error: var(--base-color-system--error-red-dark);
   --brand-orage: #ef6511;
@@ -28,7 +29,6 @@
   --background-color--background-success: var(--base-color-system--success-green);
   --text-color--text-success: var(--base-color-system--success-green-dark);
   --1em: 1em;
-  --base-color-brand--blue-light: #d9e5ff;
   --base-color-brand--blue: #2d62ff;
   --base-color-brand--blue-dark: #080331;
   --base-color-brand--pink-light: #ffaefe;
@@ -777,6 +777,7 @@ figcaption {
 
 .button.max-width-full {
   text-transform: uppercase;
+  background-color: #d2401a00;
   border-radius: .5em;
   font-size: 1.65em;
   font-weight: 900;
@@ -866,7 +867,6 @@ figcaption {
 }
 
 .section_navbar {
-  z-index: 10;
   font-size: 1vw;
   position: absolute;
 }
@@ -1790,7 +1790,7 @@ figcaption {
 .nav_shop-icons {
   justify-content: center;
   align-items: center;
-  display: none;
+  display: flex;
 }
 
 .nav_shop-icon {
@@ -1805,16 +1805,17 @@ figcaption {
 }
 
 .icon-embed-xsmall {
+  color: var(--base-color-brand--blue-light);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2rem;
+  height: 2rem;
   display: flex;
 }
 
 .nav_shop-quantity {
-  background-color: var(--base-color-neutral--black);
+  background-color: var(--pork);
   color: var(--base-color-neutral--white);
   border-radius: 100%;
   justify-content: center;
@@ -3819,6 +3820,7 @@ figcaption {
 }
 
 .cta_button.join-the-club {
+  cursor: pointer;
   border-radius: 3em;
   padding-top: 2.3em;
   padding-bottom: 1.5em;
@@ -4603,6 +4605,10 @@ figcaption {
   font-weight: 600;
 }
 
+.wrap_add-to-cart {
+  border-radius: .5em;
+}
+
 .preview-hide-elements-undo-and-delete {
   display: none;
 }
@@ -4690,6 +4696,18 @@ figcaption {
   max-width: 98vw;
   margin-left: auto;
   margin-right: auto;
+}
+
+.wrap_mini-cart {
+  z-index: 999;
+  background-color: var(--brand-yellow);
+  border-radius: 7em;
+  flex-flow: row;
+  margin-bottom: 2em;
+  margin-right: 3em;
+  padding: 1em 2em;
+  position: fixed;
+  inset: auto 0% 0% auto;
 }
 
 @media screen and (min-width: 1280px) {
@@ -5809,6 +5827,11 @@ figcaption {
 
   .nav_dropdown-link_child {
     font-size: 1rem;
+  }
+
+  .icon-embed-xsmall {
+    width: 1.5rem;
+    height: 1.5rem;
   }
 
   .filter_product-list {
